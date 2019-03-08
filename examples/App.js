@@ -8,7 +8,8 @@ class App extends Component {
 
     this.state = {
       width: window.innerWidth,
-      marker: null
+      marker: null,
+      center: [38.86530697026126, -77.20057854052735]
     }
   }
 
@@ -32,7 +33,7 @@ class App extends Component {
           width={this.state.width}
           height={600}
           zoom={4}
-          center={[38.86530697026126, -77.20057854052735]}
+          center={this.state.center}
           source={(x, y, z) => `https://maps.geocod.io/tiles/base/${z}/${x}/${y}.png`}
           onMarkerClicked={this.handleMarkerClicked}
         >
@@ -53,7 +54,10 @@ class App extends Component {
   }
 
   handleMarkerClicked = marker => {
-    this.setState({ marker })
+    this.setState({
+      marker,
+      center: marker.coords
+    })
   }
 }
 

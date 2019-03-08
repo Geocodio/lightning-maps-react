@@ -57,7 +57,7 @@ class Map extends Component {
     this.renderChildren()
 
     return (
-      <canvas key={this.props.width + '/' + this.props.height} ref={this.canvasRef} {...this.getCanvasProps()} />
+      <canvas ref={this.canvasRef} {...this.getCanvasProps()} />
     )
   }
 
