@@ -36,5 +36,8 @@ module.exports = {
       amd: 'ReactDOM',
       root: 'ReactDOM'
     }
+  },
+  devServer: {
+    port: 9001
   }
 }
