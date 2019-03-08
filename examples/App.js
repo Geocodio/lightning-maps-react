@@ -53,7 +53,7 @@ class App extends Component {
   }
 
   handleMarkerClicked = marker => {
-    this.setState({ marker });
+    this.setState({ marker })
   }
 }
 
