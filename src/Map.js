@@ -160,7 +160,7 @@ class Map extends Component {
   }
 
   getMapOptions () {
-    const validOptions = ['source', 'zoom', 'center']
+    const validOptions = ['source', 'zoom', 'center', 'attribution', 'tileSize', 'panAccelerationMultiplier', 'maxPanAcceleration', 'throwTimingThresholdMs', 'throwVelocityThreshold', 'animationDurationMs', 'debounceIntervalMs', 'tileAreaMultiplier', 'debug', 'enableLogging']
 
     return this.getFilteredProps(key => validOptions.includes(key))
   }
