@@ -27,9 +27,8 @@ class Map extends Component {
 
   componentDidUpdate (prevProps) {
     const sizeChanged = this.props.width !== prevProps.width || this.props.height !== prevProps.height
-    const sourceChanged = this.props.source !== prevProps.source
 
-    if (sizeChanged || sourceChanged) {
+    if (sizeChanged) {
       this.initLightningMap()
     }
 
