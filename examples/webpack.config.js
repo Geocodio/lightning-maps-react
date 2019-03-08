@@ -36,7 +36,8 @@ module.exports = {
     }
   },
   devServer: {
-    contentBase: './examples/dist'
+    contentBase: './examples/dist',
+    port: 9001
   },
   plugins: [
     new HtmlWebpackPlugin({

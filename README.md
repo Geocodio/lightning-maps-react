@@ -11,7 +11,7 @@ Heavily inspired by [Pigeon Maps](https://github.com/mariusandra/pigeon-maps) an
 
 ## Demo
 
-[**Live Demo**](https://geocodio.github.io/lightning-maps-react/)
+[**Demo**](https://geocodio.github.io/lightning-maps-react/)
 
 ## Installation & Usage
 
