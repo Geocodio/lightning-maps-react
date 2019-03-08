@@ -74,7 +74,7 @@ class Map extends Component {
 
   renderMarkers (children, lightningMap) {
     if (this.props.markers && this.props.markers.length > 0) {
-      const markers = this.props.markers.map(item => new LightningMap.Marker(item.coords, item.options || {}))
+      const markers = this.props.markers.map(item => new LightningMap.Marker(item.coords, item.options || {}, item.meta || {}))
 
       lightningMap.setMarkers(markers)
     } else {
@@ -120,7 +120,7 @@ class Map extends Component {
 
   renderPolygons (children, lightningMap) {
     if (this.props.polygons && this.props.polygons.length > 0) {
-      const polygons = this.props.polygons.map(item => new LightningMap.Polygon(item.json, item.objectName || null, item.options || {}, item.hoverOptions || {}))
+      const polygons = this.props.polygons.map(item => new LightningMap.Polygon(item.json, item.objectName || null, item.options || {}, item.hoverOptions || {}, item.meta || {}))
 
       lightningMap.setPolygons(polygons)
     } else {
