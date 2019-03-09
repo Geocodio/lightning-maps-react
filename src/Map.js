@@ -49,6 +49,7 @@ class Map extends Component {
     this.lightningMap.onPolygonHover = this.props.onPolygonHover || null
     this.lightningMap.onMapCenterChanged = this.props.onMapCenterChanged || null
     this.lightningMap.onMapZoomChanged = this.props.onMapZoomChanged || null
+    this.lightningMap.onMapPanned = this.props.onMapPanned || null
 
     this.renderChildren()
   }
@@ -193,7 +194,8 @@ Map.propTypes = {
   onPolygonClicked: PropTypes.func,
   onPolygonHover: PropTypes.func,
   onMapCenterChanged: PropTypes.func,
-  onMapZoomChanged: PropTypes.func
+  onMapZoomChanged: PropTypes.func,
+  onMapPanned: PropTypes.func
 }
 
 export default Map
